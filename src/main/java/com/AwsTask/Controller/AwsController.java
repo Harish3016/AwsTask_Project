@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AwsController {
 	
-	@GetMapping(value="/getName/{name}")
-	public String getName(@PathVariable String name) {
-		return name;
+	@GetMapping(value="/getMsg")
+	public String getName() {
+		return "Hello World";
 	}
 
 }
